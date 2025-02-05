@@ -349,7 +349,7 @@ header {
 .hero {
   width: 100%;
   height: calc(100vh - 3rem);
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,9 +366,9 @@ header {
 }
 
 .hero__content {
-  -webkit-transform: skewY(5deg) translateY(6%);
-      -ms-transform: skewY(5deg) translateY(6%);
-          transform: skewY(5deg) translateY(6%);
+  -webkit-transform: skewY(5deg) translateY(5%);
+      -ms-transform: skewY(5deg) translateY(5%);
+          transform: skewY(5deg) translateY(5%);
 }
 
 .hero__title {
