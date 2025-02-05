@@ -422,8 +422,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2rem 0;
-  margin-top: 1.5rem;
+  padding: 3rem 0;
+  margin-top: 3rem;
 }
 
 .concept__description {
@@ -437,6 +437,9 @@ header {
   line-height: 1.8rem;
   font-weight: 600;
   margin-bottom: 1.2rem;
+}
+
+.concept__subtitle.white {
   color: #ffffff;
 }
 
@@ -528,7 +531,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 22rem;
+  height: 25rem;
   border-radius: 2rem;
   overflow: hidden;
   margin-bottom: 2.5rem;
@@ -590,6 +593,70 @@ header {
   color: green;
   font-size: 1.2em;
   margin-right: 8px;
+}
+
+.concept__reasons {
+  margin: 3rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 0;
+}
+
+.concept__reasons-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2.5rem;
+  height: 25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5rem;
+}
+
+.no-webp .concept__reasons-img{
+  background: url("../img/reasons.jpeg") center/cover no-repeat; }
+
+.concept__reasons-img {
+  width: 40%;
+  height: 25rem;
+  border-radius: 1rem;
+}
+
+.concept__reasons-list {
+  width: 60%;
+  list-style: none;
+  padding-left: 0;
+}
+
+.concept__reasons-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.concept__reasons-item::before {
+  content: "✖";
+  color: red;
+  font-size: 4rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .services {
@@ -894,3 +961,5 @@ main {
 .webp .concept__include-list-image.third{ background: url(../img/include-3.webp) center/cover no-repeat; }
 
 .webp .concept__include-list-image.fourth{ background: url(../img/include-4.webp) center/cover no-repeat; }
+
+.webp .concept__reasons-img{ background: url(../img/reasons.webp) center/cover no-repeat; }
