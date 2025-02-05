@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: Oswald;
   font-display: swap;
@@ -340,10 +342,10 @@ header {
           transform: rotate(-135deg);
 }
 
-.no-webp .hero {
+.no-webp .hero{
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url("../img/hero1.jpg") center/cover no-repeat; }
 
-.no-webp .hero {
+.no-webp .hero{
   background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url("../img/hero1.jpg") center/cover no-repeat; }
 
 .hero {
@@ -421,6 +423,171 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem 0;
+  margin-top: 1.5rem;
+}
+
+.concept__description {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.concept__subtitle {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+}
+
+.concept__necessary-list {
+  list-style: none;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+}
+
+.concept__necessary-list-item {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.2);
+}
+
+.concept__necessary-list-item-image {
+  width: 100%;
+  height: 12rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(33, 95, 28, 0.2);
+  margin-bottom: 1rem;
+}
+
+.concept__icon {
+  width: 6rem;
+  height: 7rem;
+  stroke-width: 2px;
+}
+
+.concept__icon path {
+  stroke: #215f1c;
+  stroke-width: 2px;
+}
+
+.concept__necessary-list-item-content {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.no-webp .concept__include{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url("../img/include-bg.jpg") center/cover no-repeat; }
+
+.no-webp .concept__include{
+  background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url("../img/include-bg.jpg") center/cover no-repeat; }
+
+.concept__include {
+  margin: 3rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 0;
+}
+
+.concept__include-content {
+  margin-top: 1.5rem;
+}
+
+.concept__include-list {
+  width: 100%;
+  list-style: none;
+  margin-top: 3rem;
+}
+
+.concept__include-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 22rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+
+.concept__include-list-image {
+  width: 50%;
+}
+
+.no-webp .concept__include-list-image.first{
+  background: url("../img/include-1.jpg") center/cover no-repeat; }
+
+.no-webp .concept__include-list-image.second{
+  background: url("../img/include-2.jpg") center/cover no-repeat; }
+
+.no-webp .concept__include-list-image.third{
+  background: url("../img/include-3.jpg") center/cover no-repeat; }
+
+.no-webp .concept__include-list-image.fourth{
+  background: url("../img/include-4.jpg") center/cover no-repeat; }
+
+.concept__include-list-item-content {
+  background-color: rgba(255, 255, 255, 0.68);
+  width: 50%;
+  padding: 1.5rem 2rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.concept__include-subtitle {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.concept__include-inner-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.concept__include-inner-list-item {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.concept__include-inner-list-item:before {
+  content: "●";
+  color: green;
+  font-size: 1.2em;
+  margin-right: 8px;
 }
 
 .services {
@@ -647,6 +814,22 @@ main {
   padding: 0;
 }
 
+.section__title {
+  font-size: 2.4rem;
+  text-align: left;
+  font-weight: 600;
+  line-height: 2.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.section__title.white {
+  color: #ffffff;
+}
+
+.p-0 {
+  padding: 0;
+}
+
 @media screen and (max-width: 900px) {
   .header__nav {
     display: none;
@@ -694,6 +877,18 @@ main {
   }
 }
 
-.webp .hero { background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url(../img/hero1.webp) center/cover no-repeat; }
+.webp .hero{ background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url(../img/hero1.webp) center/cover no-repeat; }
 
-.webp .hero { background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url(../img/hero1.webp) center/cover no-repeat; }
+.webp .hero{ background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url(../img/hero1.webp) center/cover no-repeat; }
+
+.webp .concept__include{ background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url(../img/include-bg.webp) center/cover no-repeat; }
+
+.webp .concept__include{ background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url(../img/include-bg.webp) center/cover no-repeat; }
+
+.webp .concept__include-list-image.first{ background: url(../img/include-1.webp) center/cover no-repeat; }
+
+.webp .concept__include-list-image.second{ background: url(../img/include-2.webp) center/cover no-repeat; }
+
+.webp .concept__include-list-image.third{ background: url(../img/include-3.webp) center/cover no-repeat; }
+
+.webp .concept__include-list-image.fourth{ background: url(../img/include-4.webp) center/cover no-repeat; }
