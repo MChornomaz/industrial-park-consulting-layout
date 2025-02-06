@@ -1032,6 +1032,106 @@ header {
   margin-top: 7rem;
 }
 
+.footer {
+  width: 100%;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 25px 10px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 10px 25px -10px rgba(0, 0, 0, 0.2);
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.footer__logo {
+  width: 16rem;
+}
+
+.footer__logo-text {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.footer__nav-item {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer__title {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 0.7rem;
+}
+
+.footer__phone-block {
+  margin-bottom: 0.8rem;
+}
+
+.footer__phone,
+.footer__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.footer__phone-icon,
+.footer__email-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.footer__phone-link,
+.footer__email-link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer__bottom {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .btn-brand {
   position: relative;
   font-size: 17px;
