@@ -342,12 +342,6 @@ header {
           transform: rotate(-135deg);
 }
 
-.no-webp .hero{
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url("../img/hero1.jpg") center/cover no-repeat; }
-
-.no-webp .hero{
-  background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url("../img/hero1.jpg") center/cover no-repeat; }
-
 .hero {
   width: 100%;
   height: calc(100vh - 3rem);
@@ -361,6 +355,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url("../img/hero2.gif") center/cover no-repeat;
+  background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url("../img/hero2.gif") center/cover no-repeat;
   border-bottom-left-radius: 25rem;
   -webkit-transform: skewY(-5deg) translateY(-6%);
       -ms-transform: skewY(-5deg) translateY(-6%);
@@ -1052,10 +1048,6 @@ main {
     font-size: 4.5vw;
   }
 }
-
-.webp .hero{ background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url(../img/hero1.webp) center/cover no-repeat; }
-
-.webp .hero{ background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url(../img/hero1.webp) center/cover no-repeat; }
 
 .webp .concept__include{ background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url(../img/include-bg.webp) center/cover no-repeat; }
 
