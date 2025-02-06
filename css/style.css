@@ -889,6 +889,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5rem 0;
+  text-align: center;
 }
 
 .cooperation__cta-text {
@@ -976,6 +977,12 @@ header {
   line-height: 2rem;
 }
 
+.no-webp .cta{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url("../img/cta.jpeg") center/cover no-repeat; }
+
+.no-webp .cta{
+  background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url("../img/cta.jpeg") center/cover no-repeat; }
+
 .cta {
   width: 100%;
   display: -webkit-box;
@@ -987,7 +994,27 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2rem 0;
+  padding: 5rem 0;
+}
+
+.cta__content {
+  text-align: center;
+}
+
+.cta__title {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.6rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.cta__description {
+  font-size: 2.7rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
 }
 
 .contacts {
@@ -1274,3 +1301,7 @@ main {
 .webp .cooperation__cta{ background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url(../img/cta-1.webp) center/cover no-repeat; }
 
 .webp .why-us__image{ background: url(../img/why-us.webp) center/cover no-repeat; }
+
+.webp .cta{ background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url(../img/cta.webp) center/cover no-repeat; }
+
+.webp .cta{ background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url(../img/cta.webp) center/cover no-repeat; }
