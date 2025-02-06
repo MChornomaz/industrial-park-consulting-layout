@@ -910,7 +910,70 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2rem 0;
+  padding: 5rem 0;
+}
+
+.why-us__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.no-webp .why-us__image{
+  background: url("../img/why-us.jpeg") center/cover no-repeat; }
+
+.why-us__image {
+  width: 40%;
+  height: 25rem;
+  border-radius: 1rem;
+}
+
+.why-us__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  padding-left: 0;
+}
+
+.why-us__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 2rem;
+}
+
+.why-us__list-item::before {
+  content: "✔";
+  color: green;
+  font-size: 3rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.why-us__title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.why-us__description {
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .cta {
@@ -1209,3 +1272,5 @@ main {
 .webp .cooperation__cta{ background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 95, 28, 0.2)), to(rgba(33, 95, 28, 0.6))), url(../img/cta-1.webp) center/cover no-repeat; }
 
 .webp .cooperation__cta{ background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url(../img/cta-1.webp) center/cover no-repeat; }
+
+.webp .why-us__image{ background: url(../img/why-us.webp) center/cover no-repeat; }
