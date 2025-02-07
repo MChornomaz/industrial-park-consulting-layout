@@ -682,6 +682,37 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+  transition: transform 0.2s ease-in;
+  overflow: hidden;
+}
+.services__item:after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: rgba(33, 95, 28, 0.7);
+  transition: transform 0.4s ease-in;
+  z-index: 1;
+}
+.services__item:hover::after {
+  transform: scale(1500);
+  transition: transform 0.4s ease-in;
+}
+.services__item:hover {
+  color: #ffffff;
+  transition-delay: 0.2s;
+}
+.services__item:hover .services__item-img {
+  transition-delay: 0.2s;
+  background-color: rgba(33, 95, 28, 0.8);
+}
+.services__item:hover .services__item-img svg path {
+  fill: #ffffff;
+  transition-delay: 0.2s;
 }
 .services__item-img {
   width: 6rem;
@@ -694,6 +725,8 @@ header {
   justify-content: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
 }
 .services__item-img svg path {
   fill: #215f1c;
@@ -709,10 +742,14 @@ header {
 .services__item-title {
   font-size: 1.3rem;
   line-height: 1.8rem;
+  position: relative;
+  z-index: 2;
 }
 .services__item-description {
   font-size: 1.1rem;
   line-height: 1.4rem;
+  position: relative;
+  z-index: 2;
 }
 
 .cooperation {
@@ -1663,6 +1700,16 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+@media (hover: none) and (pointer: coarse) {
+  body *:hover {
+    all: unset !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  body *:hover {
+    all: unset !important;
+  }
 }
 
 .content {
