@@ -698,21 +698,23 @@ header {
   transition: transform 0.4s ease-in;
   z-index: 1;
 }
-.services__item:hover::after {
-  transform: scale(1500);
-  transition: transform 0.4s ease-in;
-}
-.services__item:hover {
-  color: #ffffff;
-  transition-delay: 0.2s;
-}
-.services__item:hover .services__item-img {
-  transition-delay: 0.2s;
-  background-color: rgba(33, 95, 28, 0.8);
-}
-.services__item:hover .services__item-img svg path {
-  fill: #ffffff;
-  transition-delay: 0.2s;
+@media screen and (min-width: 800px) {
+  .services__item:hover::after {
+    transform: scale(1500);
+    transition: transform 0.4s ease-in;
+  }
+  .services__item:hover {
+    color: #ffffff;
+    transition-delay: 0.2s;
+  }
+  .services__item:hover .services__item-img {
+    transition-delay: 0.2s;
+    background-color: rgba(33, 95, 28, 0.8);
+  }
+  .services__item:hover .services__item-img svg path {
+    fill: #ffffff;
+    transition-delay: 0.2s;
+  }
 }
 .services__item-img {
   width: 6rem;
@@ -977,8 +979,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
-  background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url("../img/cta.jpeg") center/cover no-repeat;
+  padding: 7rem 0;
 }
 .cta__content {
   text-align: center;
@@ -987,7 +988,7 @@ header {
   font-size: 4rem;
   font-weight: 600;
   line-height: 4.6rem;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 2rem;
 }
 @media only screen and (max-width: 1155px) {
@@ -1001,7 +1002,7 @@ header {
   font-size: 2.7rem;
   font-weight: 600;
   line-height: 3.6rem;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 2rem;
 }
 @media only screen and (max-width: 1155px) {
@@ -1701,16 +1702,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-@media (hover: none) and (pointer: coarse) {
-  body *:hover {
-    all: unset !important;
-  }
-}
-@media screen and (max-width: 700px) {
-  body *:hover {
-    all: unset !important;
-  }
-}
 
 .content {
   width: 100%;
@@ -1723,6 +1714,10 @@ main {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+section {
+  overflow: hidden;
 }
 
 .section__title {
