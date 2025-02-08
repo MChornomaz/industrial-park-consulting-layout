@@ -1,45 +1,81 @@
 @charset "UTF-8";
 @font-face {
-  font-family: Oswald;
+  font-family: "Raleway";
   font-display: swap;
-  src: url("../fonts/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: Oswald;
-  font-display: swap;
-  src: url("../fonts/Oswald-ExtraLight.woff2") format("woff2"), url("../fonts/Oswald-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: Oswald;
-  font-display: swap;
-  src: url("../fonts/Oswald-Light.woff2") format("woff2"), url("../fonts/Oswald-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: Oswald;
-  font-display: swap;
-  src: url("../fonts/Oswald-Medium.woff2") format("woff2"), url("../fonts/Oswald-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: Oswald;
-  font-display: swap;
-  src: url("../fonts/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald-Regular.woff") format("woff");
+  src: url("../fonts/Raleway-Regular.woff2") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: Oswald;
+  font-family: "Raleway";
   font-display: swap;
-  src: url("../fonts/Oswald-SemiBold.woff2") format("woff2"), url("../fonts/Oswald-SemiBold.woff") format("woff");
+  src: url("../fonts/Raleway-Medium.woff2") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-SemiBold.woff2") format("truetype");
   font-weight: 600;
   font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-Bold.woff2") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-ExtraBold.woff2") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-Black.woff2") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+/* Курсивні варіанти */
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-LightItalic.woff2") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-Italic.woff2") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-MediumItalic.woff2") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-SemiBoldItalic.woff2") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-BoldItalic.woff2") format("truetype");
+  font-weight: 700;
+  font-style: italic;
 }
 header {
   width: 100vw;
@@ -50,7 +86,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 999;
   -webkit-box-shadow: 1px 0px 17px -4px rgba(0, 0, 0, 0.47);
@@ -246,6 +282,7 @@ header {
   padding: 3rem 0;
   margin-top: 3rem;
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 700px) {
   .concept {
@@ -413,6 +450,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 4rem 0;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 750px) {
   .concept__reasons {
@@ -510,7 +548,7 @@ header {
 }
 .services__item {
   width: 100%;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 0.5rem;
   padding: 1.5rem;
   height: 100%;
@@ -598,6 +636,7 @@ header {
   justify-content: center;
   padding: 5rem 0;
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 .cooperation__list {
   width: 100%;
@@ -726,6 +765,7 @@ header {
   justify-content: center;
   padding: 5rem 0;
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 .why-us__container {
   display: flex;
@@ -821,6 +861,7 @@ header {
   justify-content: center;
   padding: 7rem 0;
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 @media only screen and (max-width: 700px) {
   .cta {
@@ -956,11 +997,11 @@ header {
   height: 2rem;
 }
 .contacts__icon path {
-  stroke: white;
-  fill: white;
+  stroke: #ffffff;
+  fill: #ffffff;
 }
 .contacts__link {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -984,7 +1025,7 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   padding: 1.5rem;
 }
 .contacts__form {
@@ -1150,6 +1191,9 @@ header {
   padding: 1rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
+.footer__copy {
+  color: #000000;
+}
 @media only screen and (max-width: 400px) {
   .footer__copy {
     font-size: 3vw;
@@ -1183,6 +1227,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 6rem 0;
+  color: #000000;
 }
 .faq__data {
   display: flex;
@@ -1282,8 +1327,8 @@ header {
   border: none;
   font-family: inherit;
   font-weight: 500;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
 }
 .btn-brand:hover {
   transform: translateY(-3px);
@@ -1306,7 +1351,7 @@ header {
   transition: all 0.4s;
 }
 .btn-brand::after {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .btn-brand:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -1318,7 +1363,7 @@ header {
   }
 }
 .btn-brand--reversed {
-  color: white;
+  color: #ffffff;
   background-color: #215f1c;
 }
 .btn-brand--reversed:hover {
@@ -1524,7 +1569,7 @@ summary:before {
   width: 1.75rem;
   height: 1.75rem;
   background-color: #215f1c;
-  color: #FFF;
+  color: #ffffff;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1620,7 +1665,7 @@ summary:hover {
   font-weight: 300;
   padding: 0.5rem 2rem;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
@@ -1640,7 +1685,7 @@ summary:hover {
 }
 .navigation-burger__link:active {
   background-position: 100%;
-  color: white;
+  color: #ffffff;
   transform: translateX(1rem);
 }
 .navigation-burger__checkbox:checked ~ .navigation-burger__background {
@@ -1688,12 +1733,12 @@ summary:hover {
 }
 .navigation-burger__checkbox:checked + .navigation-burger__button .navigation-burger__icon::before {
   top: 0;
-  background-color: white;
+  background-color: #ffffff;
   transform: rotate(135deg);
 }
 .navigation-burger__checkbox:checked + .navigation-burger__button .navigation-burger__icon::after {
   top: 0;
-  background-color: white;
+  background-color: #ffffff;
   transform: rotate(-135deg);
 }
 
@@ -1760,12 +1805,14 @@ summary:hover {
 }
 .modal__title {
   font-size: 2.5rem;
+  color: #000000;
 }
 .modal__title.error {
   color: #f72414;
 }
 .modal__message {
   font-size: 1.3rem;
+  color: #000000;
 }
 .modal__message.success {
   color: #215f1c;
@@ -1784,6 +1831,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif !important;
 }
 
 body {
@@ -1819,6 +1867,7 @@ main {
   font-weight: 600;
   line-height: 2.8rem;
   margin-bottom: 1.4rem;
+  color: #000000;
 }
 @media screen and (max-width: 750px) {
   .section__title {
