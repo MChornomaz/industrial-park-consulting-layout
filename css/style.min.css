@@ -127,7 +127,7 @@ header {
   height: 1.4rem;
 }
 .header__phone-icon path {
-  fill: #adc2eb;
+  fill: rgba(27, 49, 84, 0.69);
 }
 .header__nav {
   width: 100%;
@@ -197,7 +197,7 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(173, 194, 235, 0.2), rgba(173, 194, 235, 0.6)) center/cover no-repeat;
+  background: linear-gradient(rgba(27, 49, 84, 0.4), rgba(27, 49, 84, 0.1)) center/cover no-repeat;
   z-index: -1;
 }
 .hero__video {
@@ -330,7 +330,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(173, 194, 235, 0.2);
+  background-color: rgba(27, 49, 84, 0.2);
   margin-bottom: 1rem;
 }
 .concept__icon {
@@ -339,12 +339,13 @@ header {
   stroke-width: 2px;
 }
 .concept__icon path {
-  stroke: #adc2eb;
+  stroke: rgba(27, 49, 84, 0.69);
   stroke-width: 2px;
 }
 .concept__necessary-list-item-content {
   font-size: 1.1rem;
   line-height: 1.4rem;
+  text-align: center;
 }
 .concept__include {
   margin: 3rem 0;
@@ -353,7 +354,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 4rem 0;
-  background: linear-gradient(rgba(173, 194, 235, 0.9), rgba(173, 194, 235, 0.2)), url("../img/include-bg.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../img/include-bg.jpg") center/cover no-repeat;
   overflow-x: hidden;
 }
 @media screen and (max-width: 600px) {
@@ -438,7 +439,7 @@ header {
 }
 .concept__include-inner-list-item:before {
   content: "●";
-  color: #adc2eb;
+  color: rgba(27, 49, 84, 0.69);
   font-size: 1.2em;
   margin-right: 8px;
 }
@@ -513,7 +514,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 5rem 0;
-  background: linear-gradient(rgba(173, 194, 235, 0.9), rgba(173, 194, 235, 0.2)), url("../img/services.png") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../img/services.png") center/cover no-repeat;
   overflow-x: hidden;
 }
 .services__description {
@@ -569,7 +570,7 @@ header {
   bottom: 0;
   right: 0;
   border-radius: 50%;
-  background-color: rgba(173, 194, 235, 0.7);
+  background-color: rgba(27, 49, 84, 0.7);
   transition: transform 0.4s ease-in;
   z-index: 1;
 }
@@ -584,7 +585,7 @@ header {
   }
   .services__item:hover .services__item-img {
     transition-delay: 0.2s;
-    background-color: rgba(173, 194, 235, 0.8);
+    background-color: rgba(27, 49, 84, 0.8);
   }
   .services__item:hover .services__item-img svg path {
     fill: #ffffff;
@@ -596,7 +597,7 @@ header {
   height: 6rem;
   min-width: 6rem;
   min-height: 6rem;
-  background-color: rgba(173, 194, 235, 0.1);
+  background-color: rgba(27, 49, 84, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -606,7 +607,7 @@ header {
   z-index: 2;
 }
 .services__item-img svg path {
-  fill: #adc2eb;
+  fill: rgba(27, 49, 84, 0.69);
 }
 .services__item-content {
   display: flex;
@@ -668,7 +669,7 @@ header {
   justify-content: center;
 }
 .cooperation__list-arrow path {
-  stroke: #adc2eb;
+  stroke: rgba(27, 49, 84, 0.69);
 }
 .cooperation__list-arrow.down {
   display: none;
@@ -740,7 +741,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 5rem 0;
-  background: linear-gradient(rgba(173, 194, 235, 0.9), rgba(173, 194, 235, 0.2)), url("../img/cta-1.png") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/cta-1.png") center/cover no-repeat;
   text-align: center;
   overflow-x: hidden;
 }
@@ -828,7 +829,7 @@ header {
 }
 .why-us__list-item::before {
   content: "✔";
-  color: #adc2eb;
+  color: rgba(27, 49, 84, 0.69);
   font-size: 3rem;
   flex-shrink: 0;
 }
@@ -929,7 +930,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(173, 194, 235, 0.8), rgba(173, 194, 235, 0.2)), url("../img/contacts-1.jpeg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../img/contacts.webp") center/cover no-repeat;
   position: relative;
   margin-bottom: 10rem;
 }
@@ -943,7 +944,7 @@ header {
 .contacts__title {
   text-align: center;
   font-size: 3.5rem;
-  color: #000000;
+  color: #ffffff;
 }
 .contacts__block {
   display: flex;
@@ -998,13 +999,14 @@ header {
   height: 2rem;
 }
 .contacts__icon path {
-  stroke: #000000;
-  fill: #000000;
+  stroke: #ffffff;
+  fill: #ffffff;
 }
 .contacts__link {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 @media only screen and (max-width: 600px) {
   .contacts__link {
@@ -1249,13 +1251,13 @@ header {
 .faq .faq_accordion-text {
   width: 100%;
   padding: 1rem 2rem;
-  border: 1px solid rgba(173, 194, 235, 0.8);
+  border: 1px solid rgba(27, 49, 84, 0.8);
   border-top: none;
   border-radius: 0 0 1rem 1rem;
-  background-color: rgba(173, 194, 235, 0.03);
+  background-color: rgba(27, 49, 84, 0.03);
 }
 .faq .faq_accordion-text a {
-  color: #adc2eb;
+  color: rgba(27, 49, 84, 0.69);
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -1274,7 +1276,7 @@ header {
 }
 .faq__accordion-list-item::before {
   content: "✔";
-  color: #adc2eb;
+  color: rgba(27, 49, 84, 0.69);
   font-size: 1rem;
   flex-shrink: 0;
 }
@@ -1285,7 +1287,7 @@ header {
 }
 .faq__accordion-list-subtitle::before {
   content: "✔";
-  color: #adc2eb;
+  color: rgba(27, 49, 84, 0.69);
   font-size: 1rem;
   flex-shrink: 0;
 }
@@ -1305,7 +1307,7 @@ header {
 }
 .faq__accordion-sublist-item::before {
   content: "●";
-  color: #adc2eb;
+  color: rgba(27, 49, 84, 0.69);
   font-size: 1.3rem;
   flex-shrink: 0;
 }
@@ -1330,6 +1332,7 @@ header {
   font-weight: 500;
   color: #000000;
   background-color: #ffffff;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
 }
 .btn-brand:hover {
   transform: translateY(-3px);
@@ -1365,15 +1368,15 @@ header {
 }
 .btn-brand--reversed {
   color: #ffffff;
-  background-color: #adc2eb;
+  background-color: #1b3154;
 }
 .btn-brand--reversed:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(173, 194, 235, 0.2);
+  box-shadow: 0 10px 20px rgba(27, 49, 84, 0.2);
 }
 .btn-brand--reversed:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(173, 194, 235, 0.2);
+  box-shadow: 0 5px 10px rgba(27, 49, 84, 0.2);
 }
 .btn-brand--reversed::after {
   content: "";
@@ -1388,7 +1391,7 @@ header {
   transition: all 0.4s;
 }
 .btn-brand--reversed::after {
-  background-color: #adc2eb;
+  background-color: rgba(27, 49, 84, 0.69);
 }
 .btn-brand--reversed:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -1427,14 +1430,14 @@ header {
   left: 0;
   height: 2px;
   width: 0;
-  background-color: #adc2eb;
+  background-color: rgba(27, 49, 84, 0.69);
   transition: all 0.3s ease;
 }
 
 .input-field:focus + .input-label {
   top: -20px;
   font-size: 1rem;
-  color: #adc2eb;
+  color: rgba(27, 49, 84, 0.69);
 }
 
 .input-field:focus + .input-label + .input-highlight {
@@ -1554,7 +1557,7 @@ summary::-webkit-details-marker {
 }
 
 summary {
-  border: 1px solid #adc2eb;
+  border: 1px solid rgba(27, 49, 84, 0.69);
   padding: 0.75em 1em;
   cursor: pointer;
   position: relative;
@@ -1569,7 +1572,7 @@ summary:before {
   content: "+";
   width: 1.75rem;
   height: 1.75rem;
-  background-color: #adc2eb;
+  background-color: rgba(27, 49, 84, 0.69);
   color: #ffffff;
   display: inline-flex;
   justify-content: center;
@@ -1578,7 +1581,7 @@ summary:before {
 }
 
 details[open] summary {
-  background-color: rgba(173, 194, 235, 0.03);
+  background-color: rgba(27, 49, 84, 0.03);
 }
 
 details[open] summary:before {
@@ -1586,7 +1589,7 @@ details[open] summary:before {
 }
 
 summary:hover {
-  background-color: rgba(173, 194, 235, 0.05);
+  background-color: rgba(27, 49, 84, 0.05);
 }
 
 .navigation-burger {
@@ -1690,7 +1693,7 @@ summary:hover {
   transform: translateX(1rem);
 }
 .navigation-burger__checkbox:checked ~ .navigation-burger__background {
-  background: linear-gradient(#adc2eb, #adc2eb);
+  background: linear-gradient(#1b3154, #1b3154);
   transform: scale(1800) skewY(-5deg);
   max-height: 100vh;
   min-height: 100vh;
@@ -1762,7 +1765,7 @@ summary:hover {
   width: 50px;
   height: 50px;
   border: 5px solid #ffffff;
-  border-top-color: #adc2eb;
+  border-top-color: rgba(27, 49, 84, 0.69);
   border-radius: 50%;
   animation: spin 1s linear infinite;
   position: absolute;
