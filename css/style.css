@@ -1716,10 +1716,6 @@ main {
   padding: 0;
 }
 
-section {
-  overflow: hidden;
-}
-
 .section__title {
   font-size: 2.4rem;
   text-align: left;
