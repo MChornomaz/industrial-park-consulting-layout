@@ -83,7 +83,7 @@
 </header>
     <main>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="contacts__content">
             <h2 class="contacts__title">Контакти</h2>
             <div class="contacts__block">
@@ -119,22 +119,22 @@
                 </div>
             </div>
             <div class="contacts__form-wrapper">
-                <form action="" class="contacts__form">
+                <form action="" class="contacts__form" id="contact-form">
                     <div class="form-row">
                         <div class="input-container">
-                            <input placeholder="Прізвище" class="input-field" type="text" id="lastName" name="lastName">
+                            <input placeholder="Прізвище" class="input-field" type="text" id="lastName" name="lastName" required>
                             <label for="lastName" class="input-label">Прізвище</label>
                             <span class="input-highlight"></span>
                         </div>
                         <div class="input-container">
-                            <input placeholder="Ім'я" class="input-field" type="text" required id="firstName" name="firstName">
+                            <input placeholder="Ім'я" class="input-field" type="text" required id="firstName" name="firstName" >
                             <label for="firstName" class="input-label">Ім'я</label>
                             <span class="input-highlight"></span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="input-container">
-                            <input placeholder="Назва компанії" class="input-field" type="text" id="companyName" name="companyName">
+                            <input placeholder="Назва компанії" class="input-field" type="text" id="companyName" name="companyName" required>
                             <label for="companyName" class="input-label">Назва компанії</label>
                             <span class="input-highlight"></span>
                         </div>
@@ -146,12 +146,21 @@
                     </div>
                     <div class="form-row">
                         <div class="input-container">
-                            <input placeholder="E-mail" class="input-field" type="email" id="email" name="email">
+                            <input placeholder="E-mail" class="input-field" type="email" id="email" name="email" required>
                             <label for="email" class="input-label">E-mail</label>
                             <span class="input-highlight"></span>
                         </div>
                         <div class="input-container">
-                            <input placeholder="+(380) __ ___ ____" class="input-field" type="tel" id="phone" name="phone" required>
+                            <input
+                                    placeholder="+(380) __ ___ ____"
+                                    class="input-field"
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    required
+                                    pattern="[0-9+() ]+"
+                                    inputmode="tel"
+                            >
                             <label for="phone" class="input-label">Телефон</label>
                             <span class="input-highlight"></span>
                         </div>
@@ -173,12 +182,25 @@
                             Погоджуюсь з <a href="privacy-policy.html" target="_blank">Політикою конфіденційності</a>
                         </label>
                     </div>
-                    <button type="submit" class="btn-brand btn-brand--reversed">Надіслати</button>
+                    <button type="submit" class="btn-brand btn-brand--reversed" id="submit-form-btn">Надіслати</button>
                 </form>
             </div>
         </div>
     </section>
+        <div class="backdrop"></div>
+        <div class="spinner" id="spinner"></div>
+        <div class="modal" id="success-modal">
+            <h3 class="modal__title">Дякуємо!</h3>
+            <p class="modal__message success">Ваше повідомлення успішно доставлено!</p>
+            <p class="modal__message">Ми зв'яжемося з Вами найближчим часом</p>
+            <button class="btn-brand btn-brand--reversed confirm-btn">OK</button>
+        </div>
 
+        <div class="modal" id="error-modal">
+            <h3 class="modal__title  error">Щось пішло не так!</h3>
+            <p class="modal__message">Спробуйте, будь-ласка, ще раз через кілька хвилиню</p>
+            <button class="btn-brand btn-brand--reversed confirm-btn">OK</button>
+        </div>
 
     </main>
     <footer class="footer">
@@ -253,6 +275,9 @@
         </div>
     </div>
 </footer>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>

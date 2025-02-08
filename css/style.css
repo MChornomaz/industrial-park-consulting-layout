@@ -1396,7 +1396,7 @@ header {
 }
 
 #terms {
-  display: none;
+  opacity: 0;
 }
 
 .terms_label {
@@ -1697,6 +1697,83 @@ summary:hover {
   transform: rotate(-135deg);
 }
 
+.backdrop {
+  display: none;
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.backdrop.active {
+  display: block;
+}
+
+.spinner {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ffffff;
+  border-top-color: #215f1c;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: calc(50vh - 5rem);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.spinner.active {
+  display: block;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.modal {
+  width: 80vw;
+  height: 20rem;
+  max-width: 40rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  z-index: 150;
+  transform: translateX(-50%);
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  display: none;
+}
+.modal.active {
+  display: flex;
+}
+.modal__title {
+  font-size: 2.5rem;
+}
+.modal__title.error {
+  color: #f72414;
+}
+.modal__message {
+  font-size: 1.3rem;
+}
+.modal__message.success {
+  color: #215f1c;
+}
+.modal .confirm-btn {
+  margin-top: 2rem;
+}
+
 html {
   font-size: 15px;
   scroll-behavior: smooth;
@@ -1733,6 +1810,7 @@ main {
   height: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .section__title {
