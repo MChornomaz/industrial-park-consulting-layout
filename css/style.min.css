@@ -981,6 +981,11 @@ header {
   justify-content: center;
   padding: 7rem 0;
 }
+@media only screen and (max-width: 700px) {
+  .cta {
+    padding: 0 0 2rem 0;
+  }
+}
 .cta__content {
   text-align: center;
 }
@@ -993,9 +998,15 @@ header {
 }
 @media only screen and (max-width: 1155px) {
   .cta__title {
-    font-size: 7vw;
-    line-height: 7.5vw;
-    margin-bottom: 1rem;
+    font-size: 6vw;
+    line-height: 6.5vw;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .cta__title {
+    font-size: 10vw;
+    line-height: 10.5vw;
   }
 }
 .cta__description {
@@ -1007,13 +1018,25 @@ header {
 }
 @media only screen and (max-width: 1155px) {
   .cta__description {
-    font-size: 4vw;
-    line-height: 4.5vw;
+    font-size: 3vw;
+    line-height: 3.5vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .cta__description {
+    font-size: 5vw;
+    line-height: 6vw;
   }
 }
 @media only screen and (max-width: 1155px) {
   .cta__link.btn-brand {
     font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .cta__link.btn-brand {
+    font-size: 3.5vw;
+    line-height: 4.5vw;
   }
 }
 
