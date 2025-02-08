@@ -412,6 +412,7 @@ header {
   justify-content: center;
   padding: 3rem 0;
   margin-top: 3rem;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 700px) {
   .concept {
@@ -483,6 +484,7 @@ header {
   justify-content: center;
   padding: 4rem 0;
   background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url("../img/include-bg.jpg") center/cover no-repeat;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 600px) {
   .concept__include {
@@ -577,6 +579,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 4rem 0;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 750px) {
   .concept__reasons {
@@ -640,6 +643,7 @@ header {
   justify-content: center;
   padding: 5rem 0;
   background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url("../img/services.png") center/cover no-repeat;
+  overflow-x: hidden;
 }
 .services__description {
   font-size: 1.5rem;
@@ -760,6 +764,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 5rem 0;
+  overflow-x: hidden;
 }
 .cooperation__list {
   width: 100%;
@@ -865,6 +870,7 @@ header {
   padding: 5rem 0;
   background: linear-gradient(rgba(33, 95, 28, 0.2), rgba(33, 95, 28, 0.6)), url("../img/cta-1.png") center/cover no-repeat;
   text-align: center;
+  overflow-x: hidden;
 }
 .cooperation__cta-text {
   font-size: 3rem;
@@ -886,6 +892,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 5rem 0;
+  overflow-x: hidden;
 }
 .why-us__container {
   display: flex;
@@ -980,6 +987,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 7rem 0;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 700px) {
   .cta {
